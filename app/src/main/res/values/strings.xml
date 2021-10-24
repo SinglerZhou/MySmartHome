@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MySmartHome</string>
+    <string name="main_home">家居</string>
+    <string name="main_mall">商城</string>
+    <string name="main_content">内容</string>
+    <string name="main_mine">我的</string>
+    <string name="main_scene">场景</string>
+</resources>
