@@ -5,4 +5,8 @@
     <string name="main_content">内容</string>
     <string name="main_mine">我的</string>
     <string name="main_scene">场景</string>
+    <string name="load_image">加载图片</string>
+    <string name="clear_image">清除图片</string>
+    <string name="mvp_string">MVP架构</string>
+    <string name="plant_form">商家</string>
 </resources>

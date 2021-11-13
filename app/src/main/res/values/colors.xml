@@ -295,4 +295,6 @@
     <!-- 海军色 -->
     <color name="black">#000000</color>
     <!-- 黑色 -->
+    <color name="transparent">#000000ff</color>
+    <!-- 黑色 -->
 </resources>
