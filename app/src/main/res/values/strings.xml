@@ -9,4 +9,13 @@
     <string name="clear_image">清除图片</string>
     <string name="mvp_string">MVP架构</string>
     <string name="plant_form">商家</string>
+    <string name="header_navigation">列表头部</string>
+    <string name="Import">Import</string>
+    <string name="Gallery">Gallery</string>
+    <string name="slide_show">SlideShow</string>
+    <string name="manage">Manage</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">share</string>
+    <string name="send">Send</string>
+    <string name="ying">女人的嘴，骗人的鬼</string>
 </resources>
