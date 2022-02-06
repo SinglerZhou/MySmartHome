@@ -17,5 +17,8 @@
     <string name="communicate">Communicate</string>
     <string name="share">share</string>
     <string name="send">Send</string>
-    <string name="ying">女人的嘴，骗人的鬼</string>
+    <string name="ying">执子之手，与子偕老</string>
+    <string name="device_list">设备列表-华为AI音箱</string>
+    <string name="search">搜索</string>
+    <string name="device_name_hint">设备名称-房间</string>
 </resources>

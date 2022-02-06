@@ -1,61 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/red"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/main_view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/main_tab_layout"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/main_tab_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_alignBottom="@+id/main_view_pager"
         app:tabSelectedTextColor="@color/blue"
-        app:tabTextColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:tabTextColor="@color/black">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/main_tab_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_home"
-            android:icon="@mipmap/ic_launcher" />
+            android:icon="@mipmap/ic_launcher"
+            android:text="@string/main_home" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/main_tab_mall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_mall"
-            android:icon="@mipmap/ic_launcher" />
+            android:icon="@mipmap/ic_launcher"
+            android:text="@string/main_mall" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/main_tab_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_content"
-            android:icon="@mipmap/ic_launcher" />
+            android:icon="@mipmap/ic_launcher"
+            android:text="@string/main_content" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/main_tab_scene"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_scene"
-            android:icon="@mipmap/ic_launcher" />
+            android:icon="@mipmap/ic_launcher"
+            android:text="@string/main_scene" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/main_tab_mine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/main_mine"
-            android:icon="@mipmap/ic_launcher" />
+            android:icon="@mipmap/ic_launcher"
+            android:text="@string/main_mine" />
     </com.google.android.material.tabs.TabLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

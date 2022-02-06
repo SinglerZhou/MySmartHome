@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -14,6 +15,7 @@ import com.zxg.smarthome.fragment.HomeFragment;
 import com.zxg.smarthome.fragment.MallFragment;
 import com.zxg.smarthome.fragment.MineFragment;
 import com.zxg.smarthome.fragment.SceneFragment;
+import com.zxg.smarthome.utils.ScreenUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ScreenUtils.setStatusBarColor(this, R.color.transparent);
         setContentView(R.layout.activity_main);
-
         initView();
     }
 

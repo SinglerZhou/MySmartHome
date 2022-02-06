@@ -14,6 +14,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //lombok配置
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
     }
 
     buildTypes {
@@ -29,7 +31,14 @@ android {
 }
 
 dependencies {
+    //lombok配置依赖
+    implementation 'javax.annotation:javax.annotation-api:1.2'
+    annotationProcessor "org.projectlombok:lombok:1.18.12"
+    compileOnly 'org.projectlombok:lombok:1.18.12'
 
+    implementation("org.greenrobot:eventbus:3.3.1")
+
+    implementation("org.greenrobot:eventbus:3.3.1")
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'

@@ -1,0 +1,79 @@
+一、透明状态栏
+	方法一、代码里面设置，onCreate方法中，在setContentView()方法之前
+	方法二、styles.xml文件设置AppTheme，需要使用的地方设置，清单文件设置appTheme
+	
+二、内容被状态栏遮挡问题
+	因为Activity的根布局采用了ConstraintLayout约束布局，导致fragment内容被状态栏挡住。
+	将activity的根布局改为RelativeLayout之后问题解决
+	
+三、1.ViewPager和TabLayout结合使用
+		mViewPager.addOnPageChangeListener
+		mTabLayout.addOnTabSelectedListener
+		
+	2.Fragment在ViewPager中的使用
+		viewPager.setAdapter(FragmentPagerAdapter adapter)
+		
+	3.FragmentPagerAdapter的使用
+	
+四、注解？？
+
+五、PopupWindow的使用，自定义
+	点击外部不消失的问题：
+		setOutsideTouchable(true);
+        setFocusable(true);
+        setBackgroundDrawable(activity.getResources().getDrawable(R.drawable.ic_launcher_background));
+		
+	
+
+
+六、lombok 注解的使用(Android studio 4.2)
+	1. app build.gradle 
+		dependencies {
+			//lombok配置依赖
+			implementation 'javax.annotation:javax.annotation-api:1.2'
+			annotationProcessor "org.projectlombok:lombok:1.18.12"
+			compileOnly 'org.projectlombok:lombok:1.18.12'
+		}
+		
+	2. app build.gradle
+		defaultConfig {
+			//lombok配置
+			javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+		}
+		
+	3.安装插件，setting plugin ，lombok
+	
+	4.sdk配置文件添加配置
+		local.properties
+			# lombok配置
+			lombok.anyConstructor.suppressConstructorProperties=true
+			config.stopBubbling=true
+			lombok.equalsAndHashCode.callSuper=call
+			
+			
+
+七、RecyclerView 的使用
+	
+
+八、EventBus的使用
+	1. implementation("org.greenrobot:eventbus:3.3.1")
+
+	2. 定义MessageEvent消息类
+	
+	3. 页面注册
+		1).onCreate方法中注册事件
+			        EventBus.getDefault().register(this);
+		2).onDestory()方法中，取消注册事件
+			EventBus.getDefault().unregister(this);
+			
+		3).自定义方法接收事件，处理消息
+			@Subscribe(threadMode = ThreadMode.MAIN)
+			public void onGetMessage(MessageEvent messageEvent) {
+				mDeviceListText.setText(messageEvent.getMessage());
+			}
+	4. 发布事件
+		EventBus.getDefault().post(messageEvent);
+		
+九、
+
+	
